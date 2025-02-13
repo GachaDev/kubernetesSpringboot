@@ -1,0 +1,617 @@
+{
+	"info": {
+		"_postman_id": "2592202a-feaf-4da1-8e25-b0e6670d0316",
+		"name": "CRM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27332515"
+	},
+	"item": [
+		{
+			"name": "USUARIOS",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY2MTMsImlhdCI6MTczNDAwMzAxMywicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.rQXsjXcPjMQE5SN3smkso8BOUGShK-gOjKywosmdtaNVE18RZMvd5Q0ciiChf58UoGQnqAA2MwSy_4NcJ8Sd1foOEvRNtQYez0V2V2Jq2ZzF4qggOvyVPeezky0KoY3sp9VvPh_rN9tQENkIWMG8RWNGS7XRZtOu0yOC-nA04DzFv0K_l3ZaC2APnO_-mDcD2Dz9cEMsRM5sz5SjHFas_sGhmDDz3U6hdAxdpzIzl5T9zrFrDvkSzNJI94nWAJVopxonjwuZBZy0aD3OW2Ynd97KTXWXJfEGol3Q6NKT2u014AwFuh6Zhz0SATTjR6kSAh-gSJH3lL6lveaJRwFWcg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY2MTMsImlhdCI6MTczNDAwMzAxMywicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.rQXsjXcPjMQE5SN3smkso8BOUGShK-gOjKywosmdtaNVE18RZMvd5Q0ciiChf58UoGQnqAA2MwSy_4NcJ8Sd1foOEvRNtQYez0V2V2Jq2ZzF4qggOvyVPeezky0KoY3sp9VvPh_rN9tQENkIWMG8RWNGS7XRZtOu0yOC-nA04DzFv0K_l3ZaC2APnO_-mDcD2Dz9cEMsRM5sz5SjHFas_sGhmDDz3U6hdAxdpzIzl5T9zrFrDvkSzNJI94nWAJVopxonjwuZBZy0aD3OW2Ynd97KTXWXJfEGol3Q6NKT2u014AwFuh6Zhz0SATTjR6kSAh-gSJH3lL6lveaJRwFWcg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST LOGIN ADMIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST LOGIN USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"paquito\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"paquito\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT USERNAME",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoicGFxdWl0byIsImV4cCI6MTczNDAwNjkxNSwiaWF0IjoxNzM0MDAzMzE1LCJyb2xlcyI6WyJST0xFX1VTRVIiXX0.oOJMrMJBN0Q4RFgr2sXIShmeN7OR93D5iH8hjitbwSSEJiknecytL1aIIi9Qj_fsPIC0xLNRpPV-thIuwgx8iY7D-WUpQMmMQQwrpgsvpbD78AK76C8yi02-gMrwZogbTD7qN-um1F4w9pGg-HK3k8piiEQnu3lbni5WhWpLnPxIgePDqMd-ZzoCWmJWf2RnG_AefofYi-Tm1ROKXIwVupQsHG-ppnDDjdVOWEx-DE7dI6Yk-uAQ_6yf_i1Vx516oRrqZE50_Fks_1pQeqwXu7Xy-A_3PxdIWpL4NGWs1FScEJMetWDaxC5ZlyuCun5J6a3tL1DeV8lgfBaaYpiHxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"chari\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/paquito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"paquito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT INTERNAL USERNAME",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY5OTIsImlhdCI6MTczNDAwMzM5Miwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.a3sNpa-Jy87RbLQEvKhUSR-_3xOV1UyzZNMQUTFeyZBN1rdo73NGLzPVi3FVmvgodXwaUznhCVUdFVg_yU6_gNPABnZVo2oAwCAh0gTfK-EKLgI-8_W7znrCUyZG0wx1BwdgOkndTA-vfMPuB8sl0XI56XKe6_H7DUY5pwPqkquHYTCQ0hwNq5_cok3G9abvTQBBk2rSSDCN2WdDU9U7__Ei4UULyuWaI5TqJzLuT1T-4yTxvjIj0JP_vyq2-xk4W82CY55Tv-MI0MDwSz0ovIs0oFaQ5C1qSKOXu_xATZgkutYFwEX5uD1gorIapzfyDnm3MbobRHxhIAW9kzFwcQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"chari\",\r\n    \"password\": \"1234\",\r\n    \"rol\": \"ADMIN\",\r\n    \"id_propietario\" : 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/internal/chari",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"internal",
+								"chari"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE USER BY USERNAME",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY5OTIsImlhdCI6MTczNDAwMzM5Miwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.a3sNpa-Jy87RbLQEvKhUSR-_3xOV1UyzZNMQUTFeyZBN1rdo73NGLzPVi3FVmvgodXwaUznhCVUdFVg_yU6_gNPABnZVo2oAwCAh0gTfK-EKLgI-8_W7znrCUyZG0wx1BwdgOkndTA-vfMPuB8sl0XI56XKe6_H7DUY5pwPqkquHYTCQ0hwNq5_cok3G9abvTQBBk2rSSDCN2WdDU9U7__Ei4UULyuWaI5TqJzLuT1T-4yTxvjIj0JP_vyq2-xk4W82CY55Tv-MI0MDwSz0ovIs0oFaQ5C1qSKOXu_xATZgkutYFwEX5uD1gorIapzfyDnm3MbobRHxhIAW9kzFwcQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuarios/paquito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"paquito"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROPIEDADES",
+			"item": [
+				{
+					"name": "GET ALL PROPIEDADES",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY5OTIsImlhdCI6MTczNDAwMzM5Miwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.a3sNpa-Jy87RbLQEvKhUSR-_3xOV1UyzZNMQUTFeyZBN1rdo73NGLzPVi3FVmvgodXwaUznhCVUdFVg_yU6_gNPABnZVo2oAwCAh0gTfK-EKLgI-8_W7znrCUyZG0wx1BwdgOkndTA-vfMPuB8sl0XI56XKe6_H7DUY5pwPqkquHYTCQ0hwNq5_cok3G9abvTQBBk2rSSDCN2WdDU9U7__Ei4UULyuWaI5TqJzLuT1T-4yTxvjIj0JP_vyq2-xk4W82CY55Tv-MI0MDwSz0ovIs0oFaQ5C1qSKOXu_xATZgkutYFwEX5uD1gorIapzfyDnm3MbobRHxhIAW9kzFwcQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propiedades/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propiedades",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PROPIEDAD BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY5OTIsImlhdCI6MTczNDAwMzM5Miwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.a3sNpa-Jy87RbLQEvKhUSR-_3xOV1UyzZNMQUTFeyZBN1rdo73NGLzPVi3FVmvgodXwaUznhCVUdFVg_yU6_gNPABnZVo2oAwCAh0gTfK-EKLgI-8_W7znrCUyZG0wx1BwdgOkndTA-vfMPuB8sl0XI56XKe6_H7DUY5pwPqkquHYTCQ0hwNq5_cok3G9abvTQBBk2rSSDCN2WdDU9U7__Ei4UULyuWaI5TqJzLuT1T-4yTxvjIj0JP_vyq2-xk4W82CY55Tv-MI0MDwSz0ovIs0oFaQ5C1qSKOXu_xATZgkutYFwEX5uD1gorIapzfyDnm3MbobRHxhIAW9kzFwcQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propiedades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propiedades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST CREATE PROPIEDAD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMjE3OTUsImlhdCI6MTczNDAxODE5NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.tBVMkOT407U-tcjdDpcpFurmDaC9R9iAunxbqbGjRF7TQSe87d6QohEXV_mR64b8V6HEC01BIIhlOSaxn4veTmFjca7Z7AdFjyoI3WtB24vXsTbTUV-G4WO70YetBwSSRrgDUt2qBJaCJbqpBpj3uLDJ8trZKvvtRJd9sfdBDOLlEeVl0yLd9uZ4_KLpFM6Bdh0HOeRyM6xzZ_2uKRc2sUZXpmx4vlPtC5rwybKpJTeQOWvr7fMjRYPv4x94eIegmcdrZ-Fe0tn0zFsQPEJZZQCCpxktXariDdUDPRxVW4DOvP2xw9qm-ZOYJQMfLyv4WMFuaVdpztunq3gv1iEdXg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"direccion\" : \"Calle Mirador de Montepinar, Nº 21\",\r\n    \"precio\" : 1200,\r\n    \"vendida\" : false,\r\n    \"oculta\": true,\r\n    \"id_propietario\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/propiedades/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propiedades",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT PROPIEDAD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY5OTIsImlhdCI6MTczNDAwMzM5Miwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.a3sNpa-Jy87RbLQEvKhUSR-_3xOV1UyzZNMQUTFeyZBN1rdo73NGLzPVi3FVmvgodXwaUznhCVUdFVg_yU6_gNPABnZVo2oAwCAh0gTfK-EKLgI-8_W7znrCUyZG0wx1BwdgOkndTA-vfMPuB8sl0XI56XKe6_H7DUY5pwPqkquHYTCQ0hwNq5_cok3G9abvTQBBk2rSSDCN2WdDU9U7__Ei4UULyuWaI5TqJzLuT1T-4yTxvjIj0JP_vyq2-xk4W82CY55Tv-MI0MDwSz0ovIs0oFaQ5C1qSKOXu_xATZgkutYFwEX5uD1gorIapzfyDnm3MbobRHxhIAW9kzFwcQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"precio\" : 1500,\r\n    \"vendida\" : false,\r\n    \"oculta\": true,\r\n    \"id_propietario\": \"1\",\r\n    \"id_usuario\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/propiedades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propiedades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PROPIEDAD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMDY5OTIsImlhdCI6MTczNDAwMzM5Miwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.a3sNpa-Jy87RbLQEvKhUSR-_3xOV1UyzZNMQUTFeyZBN1rdo73NGLzPVi3FVmvgodXwaUznhCVUdFVg_yU6_gNPABnZVo2oAwCAh0gTfK-EKLgI-8_W7znrCUyZG0wx1BwdgOkndTA-vfMPuB8sl0XI56XKe6_H7DUY5pwPqkquHYTCQ0hwNq5_cok3G9abvTQBBk2rSSDCN2WdDU9U7__Ei4UULyuWaI5TqJzLuT1T-4yTxvjIj0JP_vyq2-xk4W82CY55Tv-MI0MDwSz0ovIs0oFaQ5C1qSKOXu_xATZgkutYFwEX5uD1gorIapzfyDnm3MbobRHxhIAW9kzFwcQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propiedades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propiedades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROPIETARIOS",
+			"item": [
+				{
+					"name": "GET ALL PROPIETARIOS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMjE3OTUsImlhdCI6MTczNDAxODE5NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.tBVMkOT407U-tcjdDpcpFurmDaC9R9iAunxbqbGjRF7TQSe87d6QohEXV_mR64b8V6HEC01BIIhlOSaxn4veTmFjca7Z7AdFjyoI3WtB24vXsTbTUV-G4WO70YetBwSSRrgDUt2qBJaCJbqpBpj3uLDJ8trZKvvtRJd9sfdBDOLlEeVl0yLd9uZ4_KLpFM6Bdh0HOeRyM6xzZ_2uKRc2sUZXpmx4vlPtC5rwybKpJTeQOWvr7fMjRYPv4x94eIegmcdrZ-Fe0tn0zFsQPEJZZQCCpxktXariDdUDPRxVW4DOvP2xw9qm-ZOYJQMfLyv4WMFuaVdpztunq3gv1iEdXg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propietarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propietarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PROPIETARIO BY ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMjE3OTUsImlhdCI6MTczNDAxODE5NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.tBVMkOT407U-tcjdDpcpFurmDaC9R9iAunxbqbGjRF7TQSe87d6QohEXV_mR64b8V6HEC01BIIhlOSaxn4veTmFjca7Z7AdFjyoI3WtB24vXsTbTUV-G4WO70YetBwSSRrgDUt2qBJaCJbqpBpj3uLDJ8trZKvvtRJd9sfdBDOLlEeVl0yLd9uZ4_KLpFM6Bdh0HOeRyM6xzZ_2uKRc2sUZXpmx4vlPtC5rwybKpJTeQOWvr7fMjRYPv4x94eIegmcdrZ-Fe0tn0zFsQPEJZZQCCpxktXariDdUDPRxVW4DOvP2xw9qm-ZOYJQMfLyv4WMFuaVdpztunq3gv1iEdXg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propietarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propietarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST CREATE PROPIETARIO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMjE3OTUsImlhdCI6MTczNDAxODE5NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.tBVMkOT407U-tcjdDpcpFurmDaC9R9iAunxbqbGjRF7TQSe87d6QohEXV_mR64b8V6HEC01BIIhlOSaxn4veTmFjca7Z7AdFjyoI3WtB24vXsTbTUV-G4WO70YetBwSSRrgDUt2qBJaCJbqpBpj3uLDJ8trZKvvtRJd9sfdBDOLlEeVl0yLd9uZ4_KLpFM6Bdh0HOeRyM6xzZ_2uKRc2sUZXpmx4vlPtC5rwybKpJTeQOWvr7fMjRYPv4x94eIegmcdrZ-Fe0tn0zFsQPEJZZQCCpxktXariDdUDPRxVW4DOvP2xw9qm-ZOYJQMfLyv4WMFuaVdpztunq3gv1iEdXg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"mario\",\r\n    \"apellidos\": \"bros\",\r\n    \"telefono\": \"666465444\",\r\n    \"genero\": \"Hombre\",\r\n    \"casado\": false,\r\n    \"n_hijos\": \"1\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/propietarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propietarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT PROPIETARIOS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMjE3OTUsImlhdCI6MTczNDAxODE5NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.tBVMkOT407U-tcjdDpcpFurmDaC9R9iAunxbqbGjRF7TQSe87d6QohEXV_mR64b8V6HEC01BIIhlOSaxn4veTmFjca7Z7AdFjyoI3WtB24vXsTbTUV-G4WO70YetBwSSRrgDUt2qBJaCJbqpBpj3uLDJ8trZKvvtRJd9sfdBDOLlEeVl0yLd9uZ4_KLpFM6Bdh0HOeRyM6xzZ_2uKRc2sUZXpmx4vlPtC5rwybKpJTeQOWvr7fMjRYPv4x94eIegmcdrZ-Fe0tn0zFsQPEJZZQCCpxktXariDdUDPRxVW4DOvP2xw9qm-ZOYJQMfLyv4WMFuaVdpztunq3gv1iEdXg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"maria\",\r\n    \"apellidos\": \"bros\",\r\n    \"telefono\": \"666465444\",\r\n    \"genero\": \"Hombre\",\r\n    \"casado\": false,\r\n    \"n_hijos\": \"1\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/propietarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propietarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PROPIETARIO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzQwMjE3OTUsImlhdCI6MTczNDAxODE5NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdfQ.tBVMkOT407U-tcjdDpcpFurmDaC9R9iAunxbqbGjRF7TQSe87d6QohEXV_mR64b8V6HEC01BIIhlOSaxn4veTmFjca7Z7AdFjyoI3WtB24vXsTbTUV-G4WO70YetBwSSRrgDUt2qBJaCJbqpBpj3uLDJ8trZKvvtRJd9sfdBDOLlEeVl0yLd9uZ4_KLpFM6Bdh0HOeRyM6xzZ_2uKRc2sUZXpmx4vlPtC5rwybKpJTeQOWvr7fMjRYPv4x94eIegmcdrZ-Fe0tn0zFsQPEJZZQCCpxktXariDdUDPRxVW4DOvP2xw9qm-ZOYJQMfLyv4WMFuaVdpztunq3gv1iEdXg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propietarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propietarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

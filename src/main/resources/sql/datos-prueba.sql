@@ -1,0 +1,2 @@
+INSERT INTO `usuarios` (`fecha_registro`, `password`, `rol`, `username`) VALUES (CURDATE(), '$2a$10$nyNBztzcbJYfQsYZ8xpJBeTKl3gkDeNHl0R3pnj4Zb9JNbQ3LbrbC', 'ADMIN', 'admin');
+INSERT INTO `usuarios` (`fecha_registro`, `password`, `rol`, `username`) VALUES (CURDATE(), '$2a$10$nyNBztzcbJYfQsYZ8xpJBeTKl3gkDeNHl0R3pnj4Zb9JNbQ3LbrbC', 'USER', 'user');
