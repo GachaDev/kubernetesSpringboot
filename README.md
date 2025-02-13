@@ -14,12 +14,12 @@ Kubernetes es un sistema de orquestación de contenedores de código abierto dis
 Kubernetes sirve para gestionar y automatizar la implementación, escalado y operación de aplicaciones en contenedores dentro de un entorno distribuido. Gracias a su capacidad de orquestación, permite asegurar la alta disponibilidad de los servicios, equilibrar la carga de trabajo y optimizar el uso de los recursos de hardware. Además, facilita la recuperación ante fallos, ya que si un contenedor deja de funcionar, Kubernetes lo reemplaza automáticamente. Su uso es ideal para arquitecturas modernas basadas en microservicios, donde se requiere flexibilidad, resiliencia y facilidad de despliegue.
 
 ## Conceptos básicos de Kubernetes
-Pods: Unidad mínima de despliegue en Kubernetes que puede contener uno o más contenedores.
-Deployments: Controla la gestión y actualización de los pods.
-Services: Expone las aplicaciones dentro o fuera del clúster y facilita la comunicación entre componentes.
-ConfigMaps y Secrets: Almacenan configuraciones y datos sensibles (como credenciales de MySQL).
-Namespaces: Permiten segmentar recursos dentro del clúster para una mejor organización.
-Volúmenes Persistentes (PV y PVC): Permiten almacenar datos de forma persistente, útil para la base de datos MySQL.
+- Pods: Unidad mínima de despliegue en Kubernetes que puede contener uno o más contenedores.
+- Deployments: Controla la gestión y actualización de los pods.
+- Services: Expone las aplicaciones dentro o fuera del clúster y facilita la comunicación entre componentes.
+- ConfigMaps y Secrets: Almacenan configuraciones y datos sensibles (como credenciales de MySQL).
+- Namespaces: Permiten segmentar recursos dentro del clúster para una mejor organización.
+- Volúmenes Persistentes (PV y PVC): Permiten almacenar datos de forma persistente, útil para la base de datos MySQL.
 
 ## Arquitectura de Kubernetes:
 Nodo maestro y nodos trabajadores:
